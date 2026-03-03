@@ -1,0 +1,44 @@
+# Mako configuration
+
+# Appearance
+width=300
+height=100
+margin=10
+padding=10
+border-size=2
+border-radius=8
+border-color=#cba6f7
+
+# Colors (Catppuccin Mocha)
+background-color=#1e1e2e
+text-color=#cdd6f4
+
+# Font
+font=monospace 10
+
+# Timeout (ms)
+timeout=5000
+
+# Anchor (top-right)
+anchor=top-right
+
+# Progress bar
+progress-color=#a6e3a1
+
+# Grouping
+group-by=urgency
+
+# Urgency levels
+[urgency=low]
+background-color=#313244
+border-color=#45475a
+
+[urgency=normal]
+background-color=#1e1e2e
+border-color=#cba6f7
+
+[urgency=critical]
+background-color=#f38ba8
+text-color=#1e1e2e
+border-color=#f38ba8
+timeout=0

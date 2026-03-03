@@ -1,0 +1,50 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 10,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "battery", "network", "pulseaudio", "tray"],
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "all-outputs": false
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": "CPU {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "RAM {percentage}%",
+    "tooltip": false
+  },
+  "battery": {
+    "format": "🔋 {capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+  "network": {
+    "format-wifi": "📡 {essid}",
+    "format-disconnected": "❌ Offline",
+    "tooltip-format": "{ipaddr}",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "🔊 {volume}%",
+    "format-muted": "🔇 Mute",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  },
+  "tray": {
+    "spacing": 10
+  }
+}
