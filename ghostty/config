@@ -50,6 +50,9 @@
 
 # Ghostty config with Tokyo Night
 
+# Shell / Multiplexer
+command = zellij
+
 # Font
 font-family = monospace
 font-size = 12
