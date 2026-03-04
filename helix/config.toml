@@ -1,0 +1,24 @@
+# Helix configuration
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-save = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "beam"
+select = "underline"
+
+[editor.whitespace]
+render = "all"
+tab = "→"
+space = "·"
+newline = "↵"
+
+[editor.search]
+smart-case = true
+
+[keys.normal]
+C-s = ":write"
+C-q = ":quit"
