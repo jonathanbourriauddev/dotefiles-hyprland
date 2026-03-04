@@ -1,0 +1,28 @@
+# Yazi configuration
+
+[manager]
+ratio = [1, 4, 3]
+sort_by = "modified"
+sort_reverse = false
+sort_dir_first = true
+linemode = "permissions"
+show_hidden = false
+show_symlink = false
+
+[preview]
+tab_size = 2
+max_cached_cursors = 10
+
+[opener]
+edit = [
+	{ run = "helix \"$@\"", desc = "Edit", block = true }
+]
+open = [
+	{ run = "xdg-open \"$1\"", desc = "Open", orphan = true }
+]
+
+[tasks]
+micro_workers = 5
+macro_workers = 10
+bizarre_retry = 5
+
